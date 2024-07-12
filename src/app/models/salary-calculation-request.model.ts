@@ -1,4 +1,4 @@
-export interface SalaryCalculationRequest{
+export interface SalaryCalculationRequest {
     regularSalary: number;
     overtimeSalary: number;
     deductions: number;

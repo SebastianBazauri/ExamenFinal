@@ -1,15 +1,15 @@
-<form (ngSubmit)="onSubmit()" #employeeForm="ngForm">
+<form (ngSubmit)="onSubmit()" #SalaryForm="ngForm">
     <div>
       <label for="regularSalary">Salario Regular:</label>
-      <input type="number" id="regularSalary" required [(ngModel)]="employee.regularSalary" name="regularSalary">
+      <input type="number" id="regularSalary" required [(ngModel)]="SalaryForm.regularSalary" name="regularSalary">
     </div>
   
     <div>
       <label for="overtimeSalary">Salario por Horas Extras:</label>
-      <input type="number" id="overtimeSalary" required [(ngModel)]="employee.overtimeSalary" name="overtimeSalary">
+      <input type="number" id="overtimeSalary" required [(ngModel)]="SalaryForm.overtimeSalary" name="overtimeSalary">
     </div>
   
-    <button type="submit" [disabled]="!employeeForm.form.valid">Calcular Salario</button>
+    <button type="submit" [disabled]="!SalaryForm.form.valid">Calcular Salario</button>
   </form>
   
   <div *ngIf="salary">
